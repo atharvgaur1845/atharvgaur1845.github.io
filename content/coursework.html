@@ -1,0 +1,375 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+  /* Design Credits: Adapted from Arnav Jain, Nilesh Gupta, Aditya Kusupati, Jon Barron, Deepak Pathak and Saurabh Gupta*/
+  
+  /* Dark mode toggle button */
+  .theme-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.2s ease;
+  }
+  
+  .theme-toggle:hover {
+    color: #1772d0;
+  }
+  
+  /* Light mode (default) */
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --link-color: #1772d0;
+    --link-hover-color: #f5b461;
+    --border-color: #e0e0e0;
+  }
+  
+  /* Dark mode */
+  [data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --link-color: #4a9eff;
+    --link-hover-color: #ffb366;
+    --border-color: #404040;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  a:focus, a:hover {
+    color: var(--link-hover-color);
+    text-decoration: none;
+  }
+  
+  body,td,th {
+     font-family: 'Source Sans Pro', Arial, sans-serif;
+     font-size: 16px;
+     font-weight: 400;
+     color: var(--text-color);
+  }
+  
+  heading {
+     font-family: 'Source Sans Pro', Arial, sans-serif;
+     font-size: 19px;
+     font-weight: 600;
+     color: var(--text-color);
+  }
+  
+  strong {
+     font-family: 'Source Sans Pro', Arial, sans-serif;
+     font-size: 16px;
+     font-weight: 800;
+     color: var(--text-color);
+  }
+  
+  sectionheading {
+     font-family: 'Source Sans Pro', Arial, sans-serif;
+     font-size: 22px;
+     font-weight: 600;
+     color: var(--text-color);
+  }
+  
+  pageheading {
+     font-family: 'Source Sans Pro', Arial, sans-serif;
+     font-size: 48px;
+     font-weight: 400;
+     color: var(--text-color);
+  }
+  
+  table {
+    background-color: var(--bg-color);
+  }
+  
+  td {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  </style>
+
+  <title>Atharv Gaur - Coursework & Skills</title>
+  <meta name="Atharv Gaur Coursework" http-equiv="Content-Type" content="Atharv Gaur Coursework">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="../js/toggle.js"></script>
+</head>
+
+<body>
+  <!-- Dark mode toggle button -->
+  <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+    <i class="fa fa-moon-o" id="theme-icon"></i>
+  </button>
+<table width="840" border="0" align="center" border="0" cellspacing="0" cellpadding="20">
+<tr><td>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+	<p align="center">
+		<pageheading>Coursework & Technical Skills</pageheading><br>
+		<a href="../index.html">← Back to Home</a>
+	</p>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+	<tr><td> <sectionheading>&nbsp;&nbsp;Core Technical Competencies</sectionheading></td></tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr>
+		<td width="100%" valign="top">
+      <p>
+        <strong>Programming Languages:</strong><br>
+        Python, C++, C, Java — with expertise spanning from high-level data science to low-level embedded systems programming.
+      </p>
+      
+      <p>
+        <strong>Deep Learning & Neural Networks:</strong><br>
+        <ul>
+          <li><strong>Architectures:</strong> Convolutional Neural Networks (CNNs), Transformers, LSTMs, GRUs, ResNets, U-Nets, Autoencoders, GANs</li>
+          <li><strong>Applications:</strong> Computer Vision, Natural Language Processing, Time-Series Analysis, Generative Modeling</li>
+          <li><strong>Advanced Topics:</strong> Neural Style Transfer, Mechanistic Interpretability, Attention Mechanisms, Vision-Language Models</li>
+          <li><strong>Techniques:</strong> Transfer Learning, Fine-tuning, Data Augmentation, Loss Function Design</li>
+        </ul>
+      </p>
+
+      <p>
+        <strong>Machine Learning & AI:</strong><br>
+        <ul>
+          <li>Reinforcement Learning (RL, MARL) and Multi-Agent Systems</li>
+          <li>Neuro-Symbolic AI and Interpretability</li>
+          <li>Classical ML (SVM, Random Forest, XGBoost, etc.)</li>
+          <li>Statistical Analysis and Hypothesis Testing</li>
+        </ul>
+      </p>
+
+      <p>
+        <strong>Deep Learning Frameworks & Libraries:</strong><br>
+        <ul>
+          <li><strong>Core:</strong> PyTorch, TensorFlow/Keras</li>
+          <li><strong>NLP:</strong> HuggingFace Transformers, Tokenizers</li>
+          <li><strong>Utilities:</strong> NumPy, Pandas, Scikit-Learn, XGBoost</li>
+          <li><strong>Computer Vision:</strong> OpenCV, Albumentations, MTCNN, dlib</li>
+          <li><strong>Visualization:</strong> Matplotlib, Seaborn</li>
+        </ul>
+      </p>
+
+      <p>
+        <strong>Data Science & Analytics:</strong><br>
+        <ul>
+          <li>Time-Series Analysis using FFT and Signal Processing</li>
+          <li>Data Preprocessing and Feature Engineering</li>
+          <li>Statistical Evaluation: Precision, Recall, F1, AUC-ROC, Dice, IoU</li>
+          <li>Data Pipeline Development and Reproducibility</li>
+        </ul>
+      </p>
+
+      <p>
+        <strong>Robotics & Embedded Systems:</strong><br>
+        <ul>
+          <li><strong>Robotics:</strong> ROS 2 (Jazzy), SLAM Algorithms, Sensor Fusion, Path Planning, A* Search</li>
+          <li><strong>Simulation:</strong> Gazebo (Harmonic), RViz Visualization</li>
+          <li><strong>Embedded:</strong> Arduino IDE, ESP32, Teensy 4.1, Microcontroller Programming</li>
+          <li><strong>Sensors:</strong> ToF (VL53L0X), IMU, Motor Control with PID</li>
+          <li><strong>Protocols:</strong> REST APIs, JSON, Custom Communication Protocols</li>
+        </ul>
+      </p>
+
+      <p>
+        <strong>Research Methodology:</strong><br>
+        <ul>
+          <li>Experimental Design and Reproducible Research</li>
+          <li>Hyperparameter Optimization and Tuning</li>
+          <li>Comprehensive Model Evaluation and Validation</li>
+          <li>Result Visualization and Documentation</li>
+        </ul>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+	<tr><td> <sectionheading>&nbsp;&nbsp;Academic Background</sectionheading></td></tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr>
+		<td width="25%" valign="top">
+      <strong>B.E. Computer Science</strong><br>
+      BITS Pilani<br>
+      Aug 2024 - Present<br>
+      Pilani, Rajasthan
+    </td>
+		<td width="75%" valign="top">
+      Pursuing undergraduate degree with specialization in artificial intelligence and machine learning. 
+      Actively engaged in research projects spanning computer vision, robotics, deep learning, and embedded systems. 
+      Focus on cutting-edge technologies and their practical applications in real-world problems.
+    </td>
+  </tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+	<tr><td> <sectionheading>&nbsp;&nbsp;Key Technical Skills by Domain</sectionheading></td></tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr>
+		<td width="50%" valign="top">
+      <p>
+        <strong>Computer Vision & Image Processing</strong>
+        <ul>
+          <li>Convolutional Neural Networks (CNN)</li>
+          <li>Object Detection & Tracking</li>
+          <li>Semantic Segmentation (U-Net)</li>
+          <li>Face Detection & Recognition</li>
+          <li>Image Enhancement & Restoration</li>
+          <li>YOLO for Real-time Detection</li>
+        </ul>
+      </p>
+
+      <p>
+        <strong>Natural Language Processing & Transformers</strong>
+        <ul>
+          <li>Transformer Architecture Understanding</li>
+          <li>Attention Mechanisms</li>
+          <li>Sequence Modeling (LSTM/GRU)</li>
+          <li>Text Classification & Analysis</li>
+          <li>Mechanistic Interpretability</li>
+        </ul>
+      </p>
+
+      <p>
+        <strong>Data Engineering & Processing</strong>
+        <ul>
+          <li>Data Cleaning & Preprocessing</li>
+          <li>Feature Engineering & Selection</li>
+          <li>Data Augmentation Strategies</li>
+          <li>DataLoader Implementation</li>
+          <li>ETL Pipelines</li>
+        </ul>
+      </p>
+    </td>
+
+    <td width="50%" valign="top">
+      <p>
+        <strong>Robotics & Autonomous Systems</strong>
+        <ul>
+          <li>ROS 2 Framework & Architecture</li>
+          <li>SLAM Algorithms</li>
+          <li>Path Planning & Navigation</li>
+          <li>Sensor Fusion</li>
+          <li>Real-time Control Systems</li>
+          <li>Autonomous Vehicle Development</li>
+        </ul>
+      </p>
+
+      <p>
+        <strong>Embedded Systems & Hardware</strong>
+        <ul>
+          <li>Microcontroller Programming</li>
+          <li>Sensor Integration & Calibration</li>
+          <li>Motor Control & PID Tuning</li>
+          <li>Real-time Operating Systems</li>
+          <li>Communication Protocols (UART, SPI, I2C)</li>
+        </ul>
+      </p>
+
+      <p>
+        <strong>Experimental & Analytical Methods</strong>
+        <ul>
+          <li>Statistical Analysis</li>
+          <li>Performance Metrics & Evaluation</li>
+          <li>Hypothesis Testing</li>
+          <li>Model Validation Techniques</li>
+          <li>Reproducible Research Practices</li>
+        </ul>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+	<tr><td> <sectionheading>&nbsp;&nbsp;Professional Development Areas</sectionheading></td></tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr>
+		<td width="100%" valign="top">
+      <p>
+        Through my research experiences and project work, I have developed proficiency in:
+        <ul>
+          <li><strong>Problem-Solving:</strong> Breaking down complex research questions into implementable solutions</li>
+          <li><strong>Experimental Design:</strong> Structuring experiments for reproducible and meaningful results</li>
+          <li><strong>Code Quality:</strong> Writing modular, documented, and maintainable code</li>
+          <li><strong>Documentation:</strong> Clear communication of technical concepts and findings</li>
+          <li><strong>Collaboration:</strong> Working effectively with diverse research teams</li>
+          <li><strong>Continuous Learning:</strong> Staying current with emerging technologies and research trends</li>
+        </ul>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <tr>
+      <td>
+        <br>
+        <p align="right"><font size="2">
+        Template Adapted From: <a href="https://sibasmarak.github.io/">Siba Smarak Panigrahi</a> 
+        </font>
+        </p>
+      </td>
+    </tr>
+</table>
+
+
+</td></tr>
+</table>
+
+  <!-- Dark mode JavaScript -->
+  <script>
+    // Check for saved theme preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    updateThemeIcon(currentTheme);
+    
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    }
+    
+    function updateThemeIcon(theme) {
+      const icon = document.getElementById('theme-icon');
+      if (theme === 'dark') {
+        icon.className = 'fa fa-sun-o';
+        icon.title = 'Switch to light mode';
+      } else {
+        icon.className = 'fa fa-moon-o';
+        icon.title = 'Switch to dark mode';
+      }
+    }
+  </script>
+
+</body>
+
+</html>

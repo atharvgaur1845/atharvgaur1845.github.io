@@ -1,0 +1,297 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+  /* Design Credits: Adapted from Arnav Jain, Nilesh Gupta, Aditya Kusupati, Jon Barron, Deepak Pathak and Saurabh Gupta*/
+  
+  /* Dark mode toggle button */
+  .theme-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.2s ease;
+  }
+  
+  .theme-toggle:hover {
+    color: #1772d0;
+  }
+  
+  /* Light mode (default) */
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --link-color: #1772d0;
+    --link-hover-color: #f5b461;
+    --border-color: #e0e0e0;
+  }
+  
+  /* Dark mode */
+  [data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --link-color: #4a9eff;
+    --link-hover-color: #ffb366;
+    --border-color: #404040;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  a:focus, a:hover {
+    color: var(--link-hover-color);
+    text-decoration: none;
+  }
+  
+  body,td,th {
+     font-family: 'Source Sans Pro', Arial, sans-serif;
+     font-size: 16px;
+     font-weight: 400;
+     color: var(--text-color);
+  }
+  
+  heading {
+     font-family: 'Source Sans Pro', Arial, sans-serif;
+     font-size: 19px;
+     font-weight: 600;
+     color: var(--text-color);
+  }
+  
+  strong {
+     font-family: 'Source Sans Pro', Arial, sans-serif;
+     font-size: 16px;
+     font-weight: 800;
+     color: var(--text-color);
+  }
+  
+  sectionheading {
+     font-family: 'Source Sans Pro', Arial, sans-serif;
+     font-size: 22px;
+     font-weight: 600;
+     color: var(--text-color);
+  }
+  
+  pageheading {
+     font-family: 'Source Sans Pro', Arial, sans-serif;
+     font-size: 48px;
+     font-weight: 400;
+     color: var(--text-color);
+  }
+  
+  table {
+    background-color: var(--bg-color);
+  }
+  
+  td {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  </style>
+
+  <title>Atharv Gaur - Research & Learning</title>
+  <meta name="Atharv Gaur Research" http-equiv="Content-Type" content="Atharv Gaur Research">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="../js/toggle.js"></script>
+</head>
+
+<body>
+  <!-- Dark mode toggle button -->
+  <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+    <i class="fa fa-moon-o" id="theme-icon"></i>
+  </button>
+<table width="840" border="0" align="center" border="0" cellspacing="0" cellpadding="20">
+<tr><td>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+	<p align="center">
+		<pageheading>Research Interests & Learning</pageheading><br>
+		<a href="../index.html">← Back to Home</a>
+	</p>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+	<tr><td> <sectionheading>&nbsp;&nbsp;Primary Research Interests</sectionheading></td></tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr>
+		<td width="100%" valign="top">
+      <p>
+        <strong>Computer Vision & Deep Learning</strong><br>
+        My primary research focus lies in advancing computer vision through deep learning techniques. 
+        I am particularly interested in developing robust models for real-world applications, including deepfake detection, 
+        semantic segmentation, and style transfer. My work emphasizes reproducibility, comprehensive evaluation, and practical implementation.
+      </p>
+
+      <p>
+        <strong>Robotics & Autonomous Systems</strong><br>
+        I am passionate about developing autonomous systems that can perceive, plan, and act in complex environments. 
+        My robotics research spans from SLAM algorithms and path planning to real-time embedded control systems. 
+        Current work includes autonomous navigation for lunar rovers and autonomous maze-solving robots.
+      </p>
+
+      <p>
+        <strong>Reinforcement Learning & Multi-Agent Systems</strong><br>
+        I am exploring how reinforcement learning can be applied to multi-agent scenarios with safety constraints. 
+        My research with the POSTMAN API Lab focuses on neuro-symbolic approaches for ensuring constraint satisfaction 
+        in dynamic environments without requiring model retraining.
+      </p>
+
+      <p>
+        <strong>Mechanistic Interpretability & Explainable AI</strong><br>
+        Understanding how neural networks make decisions is crucial for trustworthy AI systems. 
+        I am developing tools and methodologies for mechanistic interpretability, particularly for transformer architectures. 
+        This includes attention analysis, probing techniques, and visualization methods.
+      </p>
+
+      <p>
+        <strong>Time-Series Analysis for Industrial Applications</strong><br>
+        Working with Prof. Pradeep Kundu at IIT Indore, I am developing Transformer-based approaches for real-time monitoring 
+        of industrial IoT sensor data. This involves handling non-stationary time-series and designing attention mechanisms 
+        specifically suited to such complex temporal patterns.
+      </p>
+
+      <p>
+        <strong>Embedded Systems & Edge Computing</strong><br>
+        I am interested in the intersection of AI and embedded systems, where models must run efficiently on resource-constrained devices. 
+        My work with IEEE BITS Pilani on microcontroller-based robotic systems exemplifies this intersection.
+      </p>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+	<tr><td> <sectionheading>&nbsp;&nbsp;Research Methodology & Philosophy</sectionheading></td></tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr>
+		<td width="100%" valign="top">
+      <p>
+        My approach to research is grounded in rigorous experimental design and reproducibility:
+        <ul>
+          <li><strong>Reproducibility First:</strong> All experiments are designed with careful documentation of hyperparameters, 
+          data splits, and random seeds to ensure reproducible results.</li>
+          <li><strong>Comprehensive Evaluation:</strong> I employ multiple evaluation metrics appropriate to each task, 
+          avoiding overfitting to a single metric.</li>
+          <li><strong>Ablation Studies:</strong> Understanding which components contribute to performance is crucial. 
+          I design ablations to isolate the impact of each architectural choice.</li>
+          <li><strong>Visualization & Interpretation:</strong> Results are communicated not just as numbers but through 
+          visualizations that provide intuition about model behavior.</li>
+          <li><strong>Practical Implementation:</strong> Theory is validated through implementation, ensuring feasibility in real-world scenarios.</li>
+        </ul>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+	<tr><td> <sectionheading>&nbsp;&nbsp;Ongoing Learning Areas</sectionheading></td></tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr>
+		<td width="100%" valign="top">
+      <p>
+        As a researcher, I am committed to continuous learning and exploration:
+        <ul>
+          <li><strong>Vision-Language Models:</strong> Exploring the intersection of vision and language understanding for more comprehensive AI systems.</li>
+          <li><strong>Generative Models:</strong> Understanding and developing GANs, diffusion models, and other generative approaches.</li>
+          <li><strong>Neural Architecture Search:</strong> Automating the design of neural network architectures for specific tasks.</li>
+          <li><strong>Efficient AI:</strong> Developing techniques for model compression, quantization, and efficient inference.</li>
+          <li><strong>Causal Inference:</strong> Understanding causal relationships in data beyond correlation-based learning.</li>
+          <li><strong>Scientific Computing:</strong> Applying deep learning to scientific discovery and simulation.</li>
+        </ul>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+	<tr><td> <sectionheading>&nbsp;&nbsp;Collaboration & Discussion</sectionheading></td></tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr>
+		<td width="100%" valign="top">
+      <p>
+        I am always interested in:
+        <ul>
+          <li>Collaborating with researchers working on cutting-edge problems in AI and robotics</li>
+          <li>Discussing novel approaches to existing challenges in computer vision and deep learning</li>
+          <li>Sharing knowledge and learning from diverse perspectives in the research community</li>
+          <li>Mentoring and supporting other students interested in AI research</li>
+        </ul>
+      </p>
+      <p>
+        Feel free to reach out if you share research interests or would like to discuss potential collaborations!
+      </p>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <tr>
+      <td>
+        <br>
+        <p align="right"><font size="2">
+        Template Adapted From: <a href="https://sibasmarak.github.io/">Siba Smarak Panigrahi</a> 
+        </font>
+        </p>
+      </td>
+    </tr>
+</table>
+
+
+</td></tr>
+</table>
+
+  <!-- Dark mode JavaScript -->
+  <script>
+    // Check for saved theme preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    updateThemeIcon(currentTheme);
+    
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    }
+    
+    function updateThemeIcon(theme) {
+      const icon = document.getElementById('theme-icon');
+      if (theme === 'dark') {
+        icon.className = 'fa fa-sun-o';
+        icon.title = 'Switch to light mode';
+      } else {
+        icon.className = 'fa fa-moon-o';
+        icon.title = 'Switch to dark mode';
+      }
+    }
+  </script>
+
+</body>
+
+</html>

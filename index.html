@@ -1,0 +1,421 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+  /* Design Credits: Adapted from Arnav Jain, Nilesh Gupta, Aditya Kusupati, Jon Barron, Deepak Pathak and Saurabh Gupta*/
+  
+  /* Dark mode toggle button */
+  .theme-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.2s ease;
+  }
+  
+  .theme-toggle:hover {
+    color: #1772d0;
+  }
+  
+  /* Light mode (default) */
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --link-color: #1772d0;
+    --link-hover-color: #f5b461;
+    --border-color: #e0e0e0;
+  }
+  
+  /* Dark mode */
+  [data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --link-color: #4a9eff;
+    --link-hover-color: #ffb366;
+    --border-color: #404040;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  a:focus, a:hover {
+    color: var(--link-hover-color);
+    text-decoration: none;
+  }
+  
+  body,td,th {
+     font-family: 'Source Sans Pro', Arial, sans-serif;
+     font-size: 16px;
+     font-weight: 400;
+     color: var(--text-color);
+  }
+  
+  heading {
+     font-family: 'Source Sans Pro', Arial, sans-serif;
+     font-size: 19px;
+     font-weight: 600;
+     color: var(--text-color);
+  }
+  
+  strong {
+     font-family: 'Source Sans Pro', Arial, sans-serif;
+     font-size: 16px;
+     font-weight: 800;
+     color: var(--text-color);
+  }
+  
+  sectionheading {
+     font-family: 'Source Sans Pro', Arial, sans-serif;
+     font-size: 22px;
+     font-weight: 600;
+     color: var(--text-color);
+  }
+  
+  pageheading {
+     font-family: 'Source Sans Pro', Arial, sans-serif;
+     font-size: 60px;
+     font-weight: 400;
+     color: var(--text-color);
+  }
+  
+  table {
+    background-color: var(--bg-color);
+  }
+  
+  td {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  .highlight-text {
+    color: #d63031;
+    font-weight: 600;
+  }
+  
+  </style>
+  <script type="text/javascript" src="js/hidebib.js"></script>
+
+  <title>Atharv Gaur</title>
+  <meta name="Atharv Gaur" http-equiv="Content-Type" content="Atharv Gaur">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="js/toggle.js"></script>
+</head>
+
+<body>
+  <!-- Dark mode toggle button -->
+  <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+    <i class="fa fa-moon-o" id="theme-icon"></i>
+  </button>
+<table width="840" border="0" align="center" border="0" cellspacing="0" cellpadding="20">
+<tr><td>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+	<p align="left">
+		<center><pageheading>Atharv Gaur</pageheading><br>
+		<b>&nbsp;Email</b>: <a href="mailto:atharvgaur591@gmail.com">atharvgaur591@gmail.com</a> | <b>Phone</b>: <a href="tel:+918930309419">+91 89303 09419</a></center>
+	</p>
+
+	<tr>
+		<td width="32%" valign="top">
+			<p align=center>
+				<a href="https://github.com/atharvgaur1845" target="_blank">GitHub</a> | 
+        <a href="https://www.linkedin.com/in/atharv-gaur-a9ab3627a" target="_blank">LinkedIn</a>
+      </p>
+      <p align=center>
+        Explore My Work: 
+        <a href="content/projects.html" target="_blank">Projects</a> |
+        <a href="content/coursework.html" target="_blank">Coursework</a> |
+        <a href="content/achievements.html" target="_blank">Achievements</a>
+      </p>
+		</td>
+
+		<td width="68%" valign="top" align="justify" id="Bio">
+			<strong>Research-Oriented Computer Science Student</strong>
+      
+      <br><br>
+      I am an undergraduate in Computer Science Engineering at <a href="https://www.bits-pilani.ac.in/" target="_blank">Birla Institute of Technology and Science (BITS), Pilani</a>, 
+      with a strong passion for Computer Vision, Machine Learning, and Robotics research. My academic journey is driven by a commitment to experimental design, 
+      reproducibility, and meaningful contributions to state-of-the-art research.
+      
+      <br><br>
+      <strong>Current Research & Work:</strong>
+      <br>
+      I am currently engaged in multiple research initiatives:
+      <ul>
+        <li><strong>Transformer-based Sensor Data Analytics</strong> with Prof. Pradeep Kundu at IIT Indore, developing real-time monitoring systems for industrial IoT applications.</li>
+        <li><strong>Neuro-Symbolic AI</strong> with the POSTMAN API Lab at BITS Pilani, working on zero-shot adaptation to non-stationary safety constraints in multi-agent reinforcement learning.</li>
+        <li><strong>Autonomous Robotics</strong> with CRISS Robotics at BITS Pilani, developing autonomous navigation and control systems for the ERC competition.</li>
+        <li><strong>Embedded Systems</strong> as a developer with IEEE BITS Pilani, designing autonomous maze-solving micromouse robots.</li>
+      </ul>
+      
+      <br><br>
+      <strong>Technical Expertise:</strong>
+      <br>
+      My technical foundation spans deep learning architectures (CNNs, Transformers, LSTMs), computer vision applications, 
+      robotics (ROS 2, SLAM, Sensor Fusion), and embedded systems programming. I work extensively with PyTorch, TensorFlow, 
+      and specialized libraries for computer vision and robotics.
+      
+      <br><br>
+      <strong>Notable Achievement:</strong>
+      <br>
+      I was selected as a <span class="highlight-text">Finalist (Top 0.3%)</span> in the LAM Research Challenge 2025 out of ~8,000 registrations 
+      for my Automated Lunar Traverse Planner, which integrated YOLO-based crater detection, solar-shadow-aware navigation, 
+      and hierarchical path planning.
+
+      <br><br>
+      I am always open to collaborations, research opportunities, and meaningful discussions. Please feel free to reach out!
+
+      <p align=center>
+        Other:
+        <a href="content/achievements.html" target="_blank">Achievements & Awards</a> |
+        <a href="content/fun.html" target="_blank">Interests & Activities</a>
+			</p>
+		</td>
+	</tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+	<tr><td id="RecentNews"> <sectionheading>&nbsp;&nbsp;Recent Updates</sectionheading><div style="float: right;"></div></td></tr>
+</table>
+<table width="100%" align="center">
+  <tr>
+    <td width="15%">&nbsp;&nbsp;&nbsp;&nbsp; [2025]</td>
+    <td width="85%">
+      <span class="highlight-text">LAM Research Challenge 2025 Finalist</span> — Selected in top 0.3% (24 out of ~8,000) for Automated Lunar Traverse Planner project.
+    </td>
+  </tr>
+  <tr>
+    <td width="15%">&nbsp;&nbsp;&nbsp;&nbsp; [Jun 2025]</td>
+    <td width="85%">Started <strong>Transformer-based Research Internship</strong> with Prof. Pradeep Kundu at IIT Indore on sensor data analytics for industrial IoT.</td>
+  </tr>
+  <tr>
+    <td width="15%">&nbsp;&nbsp;&nbsp;&nbsp; [Apr 2025]</td>
+    <td width="85%">Joined <strong>CRISS Robotics</strong> team as Software Subsystem Developer, contributing to autonomous navigation systems.</td>
+  </tr>
+  <tr>
+    <td width="15%">&nbsp;&nbsp;&nbsp;&nbsp; [2025]</td>
+    <td width="85%">Initiated research with <strong>POSTMAN API Lab</strong> on neuro-symbolic AI and safety-constrained multi-agent reinforcement learning.</td>
+  </tr>
+  <tr>
+    <td width="15%">&nbsp;&nbsp;&nbsp;&nbsp; [Sep 2024]</td>
+    <td width="85%">Started as <strong>Embedded Systems Developer</strong> with IEEE BITS Pilani, designing micromouse robots and embedded systems.</td>
+  </tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+	<tr><td id="Projects"> <sectionheading>&nbsp;&nbsp;Featured Projects</sectionheading><div style="float: right;"></div></td></tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr>
+		<td width="100%" valign="top">
+			<p>
+        <heading>Deepfake Detection using CNN-LSTM</heading><br>
+				  <strong>Technologies:</strong> PyTorch, OpenCV, ResNet-18, Bi-LSTM<br>
+				  <strong>Achievement:</strong> <span class="highlight-text">87.69% accuracy, AUC-ROC ≈ 0.90</span><br>
+			</p>
+      <p>
+        Built a hybrid deep learning model combining ResNet-18 CNN for spatial feature extraction and Bidirectional LSTM for temporal pattern analysis 
+        across 16-frame video sequences. Implemented comprehensive face preprocessing with landmark alignment and data augmentation, achieving robust 
+        balanced generalization with balanced F1 scores on both real and fake classes.
+      </p>
+		</td>
+  </tr>
+  
+  <tr>
+		<td width="100%" valign="top">
+			<p>
+        <heading>Automated Lunar Traverse Planner</heading><br>
+				  <strong>Technologies:</strong> Python, NumPy, Matplotlib, YOLO crater detection<br>
+				  <strong>Achievement:</strong> <span class="highlight-text">LAM Challenge 2025 Finalist (Top 0.3%)</span><br>
+			</p>
+      <p>
+        Developed an intelligent path planning system for lunar rover missions integrating YOLO-based crater detection with solar illumination-aware navigation. 
+        Implemented solar shadow simulation using physics-based shadow polygons and designed hierarchical three-tier navigation with science-optimal waypoint 
+        selection and automated regolith sampling site identification.
+      </p>
+		</td>
+  </tr>
+  
+  <tr>
+		<td width="100%" valign="top">
+			<p>
+        <heading>BDH Narrative Consistency Evaluator</heading><br>
+				  <strong>Technologies:</strong> PyTorch, Transformers, Mechanistic Interpretability<br>
+			</p>
+      <p>
+        Built inference and interpretability pipeline on Baby Dragon Hatchling (BDH) transformer architecture for narrative contradiction detection. 
+        Engineered structured training data through synthetic contradiction generation and implemented mechanistic interpretability probes for high-resolution 
+        attention visualization across transformer layers and heads.
+      </p>
+		</td>
+  </tr>
+
+  <tr>
+		<td width="100%" valign="top">
+			<p>
+        <heading>Image Segmentation using U-Net</heading><br>
+				  <strong>Technologies:</strong> PyTorch, Albumentations<br>
+			</p>
+      <p>
+        Implemented complete semantic segmentation pipeline with U-Net architecture, custom DataLoader with train/validation splits, and real-time augmentations. 
+        Applied Dice + BCE hybrid loss function and integrated GPU acceleration with reproducible seeding for scalable experimentation.
+      </p>
+		</td>
+  </tr>
+
+  <tr>
+		<td width="100%" valign="top">
+			<p>
+        <heading>Micromouse Maze Solver</heading><br>
+				  <strong>Technologies:</strong> C++, Teensy 4.1, VL53L0X, IMU — IEEE BITS Pilani<br>
+			</p>
+      <p>
+        Designed autonomous micromouse robot with embedded systems integration using Teensy 4.1 MCU, VL53L0X ToF sensors, and IMU for precise navigation. 
+        Implemented flood fill algorithm, PID control for lane-centering, and shortest-path logic for real-time maze solving.
+      </p>
+		</td>
+  </tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+	<tr><td id="Experience"> <sectionheading>&nbsp;&nbsp;Research Experience</sectionheading><div style="float: right;"></div></td></tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr>
+		<td width="25%" valign="top">
+      <strong>Research Intern</strong><br>
+      Jun 2025 - Present<br>
+      <a href="https://www.iitindore.ac.in/" target="_blank">IIT Indore</a><br>
+      Indore, India (Remote)
+    </td>
+		<td width="75%" valign="top">
+      Working with Prof. Pradeep Kundu on Transformer-based architecture for real-time monitoring and classification of sequential sensor data in industrial settings. 
+      Designing multi-head attention modules tailored to non-stationary time-series from industrial IoT sensors.
+    </td>
+  </tr>
+
+  <tr>
+		<td width="25%" valign="top">
+      <strong>Research Member</strong><br>
+      2025 - Present<br>
+      <a href="https://www.bits-pilani.ac.in/" target="_blank">BITS Pilani</a><br>
+      POSTMAN API Lab
+    </td>
+		<td width="75%" valign="top">
+      Working on Zero-Shot Adaptation to Non-Stationary Safety Constraints in Multi-Agent Reinforcement Learning via Neuro-Symbolic Shielding. 
+      Developing formal symbolic safety shields that integrate with MARL policies to enforce dynamic constraint satisfaction without retraining.
+    </td>
+  </tr>
+
+  <tr>
+		<td width="25%" valign="top">
+      <strong>Software Subsystem Developer</strong><br>
+      Apr 2025 - Present<br>
+      <a href="https://www.bits-pilani.ac.in/" target="_blank">BITS Pilani</a><br>
+      CRISS Robotics
+    </td>
+		<td width="75%" valign="top">
+      Developing autonomous control systems and ROS2 communication modules for the ERC competition. 
+      Built autonomous airlock control system with 10-state FSM logic and sensor fusion, and currently implementing autonomous navigation using ArUco markers and Nav2.
+    </td>
+  </tr>
+
+  <tr>
+		<td width="25%" valign="top">
+      <strong>Embedded Systems Developer</strong><br>
+      Sep 2024 - Present<br>
+      <a href="https://www.bits-pilani.ac.in/" target="_blank">BITS Pilani</a><br>
+      IEEE Technical Division
+    </td>
+		<td width="75%" valign="top">
+      Designing and implementing autonomous micromouse robot with Teensy 4.1 MCU, VL53L0X sensors, and IMU. 
+      Implementing flood-fill maze-solving algorithms with PID control and Hamming Code-based error correction systems.
+    </td>
+  </tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+	<tr><td id="Skills"> <sectionheading>&nbsp;&nbsp;Technical Skills</sectionheading><div style="float: right;"></div></td></tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr>
+		<td width="100%" valign="top">
+      <p>
+        <strong>Programming Languages:</strong> Python, C++, C, Java<br>
+        <strong>Deep Learning & AI:</strong> CNNs, Transformers, LSTMs, GRUs, ResNets, U-Nets, Neural Style Transfer, Reinforcement Learning, GANs, RAG, Vision-Language Models, Mechanistic Interpretability<br>
+        <strong>Frameworks & Libraries:</strong> PyTorch, TensorFlow, HuggingFace Transformers, Scikit-Learn, XGBoost, OpenCV, Albumentations, MTCNN<br>
+        <strong>Data Science:</strong> NumPy, Pandas, Matplotlib, Seaborn, FFT for Time-Series Analysis<br>
+        <strong>Robotics & Embedded:</strong> ROS 2 (Jazzy), SLAM, Sensor Fusion, Gazebo (Harmonic), RViz, Arduino IDE, ESP32, Teensy 4.1<br>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <tr>
+      <td>
+        <br>
+        <p align="right"><font size="2">
+        Template Adapted From: <a href="https://sibasmarak.github.io/">Siba Smarak Panigrahi</a> 
+        </font>
+        </p>
+      </td>
+    </tr>
+</table>
+
+
+</td></tr>
+</table>
+
+  <!-- Dark mode JavaScript -->
+  <script>
+    // Check for saved theme preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    updateThemeIcon(currentTheme);
+    
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    }
+    
+    function updateThemeIcon(theme) {
+      const icon = document.getElementById('theme-icon');
+      if (theme === 'dark') {
+        icon.className = 'fa fa-sun-o';
+        icon.title = 'Switch to light mode';
+      } else {
+        icon.className = 'fa fa-moon-o';
+        icon.title = 'Switch to dark mode';
+      }
+    }
+  </script>
+
+</body>
+
+</html>

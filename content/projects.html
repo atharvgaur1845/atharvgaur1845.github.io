@@ -1,0 +1,353 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+  /* Design Credits: Adapted from Arnav Jain, Nilesh Gupta, Aditya Kusupati, Jon Barron, Deepak Pathak and Saurabh Gupta*/
+  
+  /* Dark mode toggle button */
+  .theme-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.2s ease;
+  }
+  
+  .theme-toggle:hover {
+    color: #1772d0;
+  }
+  
+  /* Light mode (default) */
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --link-color: #1772d0;
+    --link-hover-color: #f5b461;
+    --border-color: #e0e0e0;
+  }
+  
+  /* Dark mode */
+  [data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --link-color: #4a9eff;
+    --link-hover-color: #ffb366;
+    --border-color: #404040;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  a:focus, a:hover {
+    color: var(--link-hover-color);
+    text-decoration: none;
+  }
+  
+  body,td,th {
+     font-family: 'Source Sans Pro', Arial, sans-serif;
+     font-size: 16px;
+     font-weight: 400;
+     color: var(--text-color);
+  }
+  
+  heading {
+     font-family: 'Source Sans Pro', Arial, sans-serif;
+     font-size: 19px;
+     font-weight: 600;
+     color: var(--text-color);
+  }
+  
+  strong {
+     font-family: 'Source Sans Pro', Arial, sans-serif;
+     font-size: 16px;
+     font-weight: 800;
+     color: var(--text-color);
+  }
+  
+  sectionheading {
+     font-family: 'Source Sans Pro', Arial, sans-serif;
+     font-size: 22px;
+     font-weight: 600;
+     color: var(--text-color);
+  }
+  
+  pageheading {
+     font-family: 'Source Sans Pro', Arial, sans-serif;
+     font-size: 48px;
+     font-weight: 400;
+     color: var(--text-color);
+  }
+  
+  .achievement-highlight {
+    color: #d63031;
+    font-weight: 600;
+  }
+  
+  table {
+    background-color: var(--bg-color);
+  }
+  
+  td {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  </style>
+
+  <title>Atharv Gaur - Projects</title>
+  <meta name="Atharv Gaur Projects" http-equiv="Content-Type" content="Atharv Gaur Projects">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="../js/toggle.js"></script>
+</head>
+
+<body>
+  <!-- Dark mode toggle button -->
+  <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+    <i class="fa fa-moon-o" id="theme-icon"></i>
+  </button>
+<table width="840" border="0" align="center" border="0" cellspacing="0" cellpadding="20">
+<tr><td>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+	<p align="center">
+		<pageheading>Projects & Research</pageheading><br>
+		<a href="../index.html">← Back to Home</a>
+	</p>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+	<tr><td> <sectionheading>&nbsp;&nbsp;Featured Research Projects</sectionheading></td></tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr>
+		<td width="100%" valign="top">
+			<p>
+        <heading>Deepfake Detection using CNN-LSTM</heading><br>
+				  <strong>Technologies:</strong> PyTorch, OpenCV, ResNet-18, Bi-LSTM<br>
+				  <strong>Timeline:</strong> 2025<br>
+			</p>
+      <p>
+        <strong>Objective:</strong> Develop a robust deepfake detection system using hybrid deep learning architecture.
+        <br><br>
+        <strong>Approach:</strong> Built a hybrid deep learning model combining ResNet-18 CNN for spatial feature extraction (512-D embeddings) 
+        and Bidirectional LSTM (256 hidden units, 2 layers) for temporal pattern analysis across 16-frame video sequences. 
+        Implemented comprehensive face preprocessing pipeline using dlib HOG detector with 68-point landmark alignment, frame sampling at 1 FPS, 
+        and augmentation strategies (geometric rotation ±15°, photometric brightness ±20%).
+        <br><br>
+        <strong>Results:</strong> Achieved <span class="achievement-highlight">87.69% accuracy and AUC-ROC ≈ 0.90</span> on 2,502 sequences 
+        (1,308 real, 1,194 fake). Trained with AdamW optimizer, cross-entropy loss with class weighting, and ReduceLROnPlateau scheduler. 
+        Achieved robust balanced generalization with F1: 88.28% (Real), 87.04% (Fake).
+        <br><br>
+        <strong>Key Contributions:</strong> Modular architecture for feature extraction and temporal analysis; comprehensive evaluation methodology; 
+        reproducible training pipeline with detailed hyperparameter documentation.
+      </p>
+		</td>
+  </tr>
+
+  <tr>
+		<td width="100%" valign="top">
+			<p>
+        <heading>Automated Lunar Traverse Planner</heading><br>
+				  <strong>Technologies:</strong> Python, NumPy, Matplotlib, YOLO crater detection<br>
+				  <strong>Timeline:</strong> 2025 | <span class="achievement-highlight">LAM Challenge 2025 Finalist (Top 0.3%)</span><br>
+			</p>
+      <p>
+        <strong>Objective:</strong> Design an intelligent path planning system for autonomous lunar rover missions.
+        <br><br>
+        <strong>Approach:</strong> Developed a multi-layered system integrating YOLO-based crater detection with solar illumination-aware navigation. 
+        Implemented physics-based solar shadow simulation using sun elevation and azimuth angles for real-time illumination assessment. 
+        Designed three-tier hierarchical navigation: Tier 1 (science-optimal direct path), Tier 2 (rotational escape search in 8 directions), 
+        Tier 3 (last-resort hazard breach protocol with relaxed safety margins). Automated scientific waypoint selection using crater rim geology 
+        scoring and regolith sampling on 15m grid with ≥20m crater exclusion radius.
+        <br><br>
+        <strong>Results:</strong> Successfully navigated 100m² terrain maps with optimal solar efficiency (≥0.90 threshold) maintained throughout traversal. 
+        System demonstrated robust adaptation to complex terrain scenarios and dynamic constraint satisfaction.
+        <br><br>
+        <strong>Recognition:</strong> <span class="achievement-highlight">Selected as Finalist (Top 0.3%, 24 out of ~8,000 registrations)</span> 
+        in LAM Research Challenge 2025.
+      </p>
+		</td>
+  </tr>
+
+  <tr>
+		<td width="100%" valign="top">
+			<p>
+        <heading>BDH Narrative Consistency Evaluator</heading><br>
+				  <strong>Technologies:</strong> PyTorch, Transformers, Mechanistic Interpretability<br>
+				  <strong>Timeline:</strong> 2025<br>
+			</p>
+      <p>
+        <strong>Objective:</strong> Develop interpretable transformer models for narrative consistency detection with mechanistic analysis.
+        <br><br>
+        <strong>Approach:</strong> Built complete inference and interpretability pipeline on Baby Dragon Hatchling (BDH) transformer architecture 
+        (6-layer, d=512, 8 heads, RoPE positional embeddings). Engineered structured training data via synthetic contradiction generation using safe 
+        name-swapping, template-based input formatting, and balanced positive/negative sampling from literary novels. Implemented mechanistic interpretability 
+        probes: captured per-layer, per-head attention scores; averaged across heads; generated high-resolution attention heatmaps to visualize model 
+        decision pathways across layers and heads.
+        <br><br>
+        <strong>Pipeline:</strong> End-to-end workflow from pretraining on raw novel text through supervised fine-tuning to inference with GPT2TokenizerFast. 
+        Classifier uses max-pooled hidden states with MLP head for final predictions.
+        <br><br>
+        <strong>Key Contributions:</strong> Mechanistic interpretability probes for transformer analysis; systematic approach to understanding model decision boundaries; 
+        reproducible interpretation methodology.
+      </p>
+		</td>
+  </tr>
+
+  <tr>
+		<td width="100%" valign="top">
+			<p>
+        <heading>Image Segmentation using U-Net</heading><br>
+				  <strong>Technologies:</strong> PyTorch, Albumentations, Semantic Segmentation<br>
+				  <strong>Timeline:</strong> 2025<br>
+			</p>
+      <p>
+        <strong>Objective:</strong> Implement state-of-the-art semantic segmentation pipeline with modern best practices.
+        <br><br>
+        <strong>Approach:</strong> Implemented complete semantic segmentation pipeline with U-Net architecture incorporating custom DataLoader with 
+        train/validation splits and real-time augmentations via Albumentations. Applied Dice + BCE hybrid loss function for balanced optimization. 
+        Integrated GPU acceleration with AMP (Automatic Mixed Precision), reproducible seeding for deterministic results, and modular architecture 
+        for scalable experimentation.
+        <br><br>
+        <strong>Results:</strong> Achieved high Dice coefficient and Intersection-over-Union (IoU) scores with comprehensive visualization of 
+        prediction masks and ground truth comparisons.
+        <br><br>
+        <strong>Key Features:</strong> Production-ready data pipeline; modern loss functions; GPU-optimized training; visualization utilities for 
+        result analysis and interpretation.
+      </p>
+		</td>
+  </tr>
+
+  <tr>
+		<td width="100%" valign="top">
+			<p>
+        <heading>Neural Style Transfer via VGG19</heading><br>
+				  <strong>Technologies:</strong> PyTorch, OpenCV, VGG19, Anime Art Style<br>
+				  <strong>Timeline:</strong> 2024<br>
+			</p>
+      <p>
+        <strong>Objective:</strong> Implement neural style transfer to convert images to anime art style.
+        <br><br>
+        <strong>Approach:</strong> Implemented neural style transfer with pretrained VGG19 backbone, separating content and style using multi-layer 
+        activations. Minimized combined Content + Style + Total Variation (TV) loss through gradient-based optimization. Tuned style/content weights, 
+        learning rate, and image resolution for optimal aesthetic results. Enabled GPU acceleration with AMP support and reproducible random seeds 
+        for consistent output.
+        <br><br>
+        <strong>Results:</strong> Successfully generated high-quality stylized images with anime-style characteristics while preserving content structure. 
+        Validated outputs with side-by-side OpenCV comparisons and quality metrics.
+      </p>
+		</td>
+  </tr>
+
+  <tr>
+		<td width="100%" valign="top">
+			<p>
+        <heading>CIFAR-10 Image Classification with Transfer Learning</heading><br>
+				  <strong>Technologies:</strong> PyTorch, Transfer Learning, CNN<br>
+				  <strong>Timeline:</strong> 2024<br>
+			</p>
+      <p>
+        <strong>Objective:</strong> Develop high-accuracy image classification model for CIFAR-10 dataset using transfer learning.
+        <br><br>
+        <strong>Approach:</strong> Developed and fine-tuned CNN model with dropout regularization and batch normalization for improved generalization. 
+        Applied transfer learning techniques to leverage pre-trained features. Conducted systematic hyperparameter tuning including learning rate, 
+        batch size, weight decay, and architectural parameters. Implemented comprehensive validation and testing protocols.
+        <br><br>
+        <strong>Results:</strong> Achieved <span class="achievement-highlight">87% validation accuracy</span> through careful optimization and 
+        architectural refinement.
+        <br><br>
+        <strong>Key Techniques:</strong> Batch normalization for training stability; dropout for regularization; transfer learning for reduced training time; 
+        systematic hyperparameter optimization.
+      </p>
+		</td>
+  </tr>
+
+  <tr>
+		<td width="100%" valign="top">
+			<p>
+        <heading>Micromouse Maze Solver</heading><br>
+				  <strong>Technologies:</strong> C++, Teensy 4.1, VL53L0X ToF Sensors, IMU, Flood-Fill Algorithm<br>
+				  <strong>Timeline:</strong> 2024 | IEEE BITS Pilani<br>
+			</p>
+      <p>
+        <strong>Objective:</strong> Design and implement autonomous robot capable of solving complex mazes with real-time feedback.
+        <br><br>
+        <strong>Approach:</strong> Designed comprehensive embedded systems solution with Teensy 4.1 MCU, VL53L0X time-of-flight sensors, and 9-axis IMU. 
+        Implemented flood-fill maze-solving algorithm with PID control for precise motor control and lane-centering. Engineered sensor fusion for accurate 
+        orientation tracking and distance measurements. Developed shortest-path optimization post-maze-exploration.
+        <br><br>
+        <strong>Hardware Integration:</strong> Sensor fusion combining ToF range data and IMU orientation for robust position estimation; 
+        real-time motor control with PID tuning for precise movement.
+        <br><br>
+        <strong>Results:</strong> Successfully navigated complex maze structures autonomously with optimized shortest-path execution. 
+        Demonstrated robust hardware-software integration and real-time embedded systems design.
+      </p>
+		</td>
+  </tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <tr>
+      <td>
+        <br>
+        <p align="right"><font size="2">
+        Template Adapted From: <a href="https://sibasmarak.github.io/">Siba Smarak Panigrahi</a> 
+        </font>
+        </p>
+      </td>
+    </tr>
+</table>
+
+
+</td></tr>
+</table>
+
+  <!-- Dark mode JavaScript -->
+  <script>
+    // Check for saved theme preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    updateThemeIcon(currentTheme);
+    
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    }
+    
+    function updateThemeIcon(theme) {
+      const icon = document.getElementById('theme-icon');
+      if (theme === 'dark') {
+        icon.className = 'fa fa-sun-o';
+        icon.title = 'Switch to light mode';
+      } else {
+        icon.className = 'fa fa-moon-o';
+        icon.title = 'Switch to dark mode';
+      }
+    }
+  </script>
+
+</body>
+
+</html>
