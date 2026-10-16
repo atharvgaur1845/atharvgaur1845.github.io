@@ -1,0 +1,1 @@
+export{t as default}from"./Companion.CWnt5aqJ.js";

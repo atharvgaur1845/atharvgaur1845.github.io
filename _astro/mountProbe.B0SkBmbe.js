@@ -1,0 +1,1 @@
+import{n as e,t}from"./Companion.CWnt5aqJ.js";import{t as n}from"./client.Dwz0GX13.js";var r=n(),i=e(),a=null;function o(){if(a)return;let e=document.createElement(`div`);document.body.appendChild(e),a=(0,r.createRoot)(e),a.render((0,i.jsx)(t,{lazy:!0}))}export{o as mountProbe};
